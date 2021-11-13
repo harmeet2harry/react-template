@@ -1,0 +1,44 @@
+@import './_variables.scss';
+
+html, body {
+  font-size: $font-size;
+}
+
+*, *:after,*::before {
+  box-sizing: border-box;
+}
+
+[hidden] { 
+  display: none !important;
+}
+
+h1 {
+  margin: 0;
+}
+
+.min-height {
+  height: 100%;
+  min-height: calc(100vh - 50px);
+}
+
+.app-header {
+  border: 1px solid $light-grey;
+  .mat-tab-nav-bar {
+    border-bottom: 0;
+  }
+}
+
+.dialog-title {
+  margin-bottom: 1rem;
+}
+
+// account
+.account {
+    background-color: $light-grey;
+    .mat-card {
+        width: 25%;
+    }
+    .card-footer {
+      margin-top: 1.50rem;
+    }
+}
